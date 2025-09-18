@@ -27,3 +27,41 @@ function printTable(n){
     }
 }
 printTable(3);
+
+// return function 
+
+function getSum(n){
+    let sum=0;
+    for(let i=1;i<=n;i++){
+        sum +=i;
+
+    }
+    return sum;
+}
+
+// scope determines the accessability of variable 
+// function scope variable defined inside the function are not accessible (visible) from outside the function
+function calsum(){
+    let sum=a+b;
+    // inside fuction
+    console.log(sum);
+
+}
+// block scope {} symbol apply on let and const function
+{
+    let a=4;
+    console.log (a);
+}
+
+// lexical scopoe using concept of nested function 
+function ourterfun(){     // outer function
+    let x=5;
+    let y=6;
+    function innerfun(){     // inner function
+        console.log(x);
+    }
+    innerfun();
+
+}
+ 
+

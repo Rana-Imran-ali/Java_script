@@ -24,3 +24,11 @@ console,log("Hi there");
 setTimeout(()=> {
     console.log("Apna college");
 },4000);
+
+
+// Dom events 
+// events are signals that something has occured 
+
+
+
+
